@@ -1,0 +1,12 @@
+.box {
+    display: flex;
+    background-color: #2CB751;
+    height: 50px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.justify-end {
+    margin-left: auto;
+    text-align: right;
+}

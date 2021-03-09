@@ -1,0 +1,12 @@
+<mat-list role="list">
+  <mat-list-item role="listitem" class="smartcontract-list-contract" *ngFor="let contract of contracten">
+    <span class="smartcontract-list-item">{{contract}}</span>
+    <span class="spacer"></span>
+    <button mat-icon-button class="smartcontract-list-item edit-button">
+      <mat-icon>create</mat-icon>
+    </button>
+    <button mat-icon-button class="delete-button">
+      <mat-icon>delete</mat-icon>
+    </button>
+  </mat-list-item>
+</mat-list>

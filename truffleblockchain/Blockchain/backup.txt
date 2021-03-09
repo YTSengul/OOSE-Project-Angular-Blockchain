@@ -1,0 +1,7 @@
+const contracts = [artifacts.require("ConvertLib"), artifacts.require("MetaCoin")];
+
+module.exports = function(deployer) {
+    for (var i = 0; i < contracts.length; i++) {
+        deployer.deploy(contracts[i])
+    }
+};

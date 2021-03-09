@@ -1,0 +1,29 @@
+<div class="page-content">
+
+  <form method="post">
+
+    <div class="name">
+      <div class="name-input">
+        <label>Naam smart contract:</label>
+        <mat-form-field>
+          <label>
+            <input [(ngModel)]="smartContract.smartContractNaam" [ngModelOptions]="{standalone: true}" matInput>
+          </label>
+        </mat-form-field>
+      </div>
+    </div>
+
+    <div class="heading">
+      <h3 class="header-text"> Vul hieronder de parameters in.</h3>
+
+    </div>
+    <div *ngFor="let parameter of smartContract.rootParameters">
+      <app-tree-children [smartContract]="smartContract" [huidigeParameter]="parameter"></app-tree-children>
+    </div>
+
+    <div class="send-button">
+      <button mat-raised-button color="primary" (click)="maakContractAan()">Maak contract aan</button>
+    </div>
+
+  </form>
+</div>

@@ -1,0 +1,33 @@
+.spacer {
+  flex: 1 1 auto;
+}
+
+.mat-list-item.smartcontract-list-contract {
+  margin-top: 16px;
+  margin-bottom: 16px;
+  border-radius: 8px;
+  background-color: #EEEEEE;
+  font-family: Helvetica;
+  font-size: 20px;
+  padding: 16px;
+}
+
+.smartcontract-list-item {
+  margin-right: 10px;
+}
+
+.edit-button {
+  background-color: #4CAF50;
+}
+
+.edit-button:hover {
+  background-color: #00C853;
+}
+
+.delete-button {
+  background-color: #E53935;
+}
+
+.delete-button:hover {
+  background-color: #F44336;
+}

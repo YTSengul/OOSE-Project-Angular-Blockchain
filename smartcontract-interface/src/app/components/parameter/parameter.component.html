@@ -1,0 +1,98 @@
+<div class="accordion">
+
+  <mat-accordion>
+    <mat-expansion-panel>
+
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          Parameter {{huidigeParameter.parameterNummer}}
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+
+      <div class="parameter">
+        <div class="inputs">
+          <div class="input">
+            <mat-form-field>
+              <mat-select placeholder="Kies een categorie">
+                <mat-option *ngFor="let categorie of categorieen"
+                            [value]="categorie.waarde"
+                            (click)="huidigeParameter.onderwerp.naam = categorie.waarde"
+                > {{categorie.toonWaarde}} </mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
+          <div class="input">
+            <mat-form-field>
+              <mat-select placeholder="Kies een parameter">
+                <mat-option *ngFor="let parameter of parameters"
+                            [value]="parameter.waarde"
+                            (click)="huidigeParameter.onderwerp.type = parameter.waarde"
+                > {{parameter.toonWaarde}}</mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
+          <div class="input">
+            <mat-form-field>
+              <mat-select placeholder="Kies een Vergelijker">
+                <mat-option *ngFor="let operator of operatoren"
+                            [value]="operator.waarde"
+                            (click)="huidigeParameter.vergelijker = operator.waarde"
+                >{{operator.toonWaarde}}</mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
+          <div class="input">
+            <mat-form-field>
+              <input type="number" [(ngModel)]="huidigeParameter.waarde"
+                     [ngModelOptions]="{standalone: true}"
+                     matInput placeholder="Waarde">
+            </mat-form-field>
+          </div>
+          <div class="input">
+            <mat-radio-group>
+              <mat-radio-button *ngFor="let radio of stoplichtKleuren"
+                                [value]="radio.waarde"
+                                (click)="huidigeParameter.adviesKleur = radio.klasse"
+                                [ngClass]="radio.klasse"></mat-radio-button>
+            </mat-radio-group>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="add-parameter-layer">
+        <div class="plusbutton">
+          <button mat-mini-fab [mat-menu-trigger-for]="param1" type="button">
+            <mat-icon aria-label="Icon-button with plus">add</mat-icon>
+          </button>
+          <mat-menu #param1="matMenu">
+            <button mat-menu-item type="button" (click)="nieuwParameterInNieuwLaag(huidigeParameter)">
+              <span >Nieuwe parameter in een onderliggende laag</span>
+            </button>
+            <button mat-menu-item type="button" (click)="nieuwParameter(huidigeParameter)">
+              <span >Nieuwe parameter in deze laag</span>
+            </button>
+          </mat-menu>
+        </div>
+        <div class="deletebutton" *ngIf="parameterMagVerwijderdWorden(huidigeParameter)">
+          <button mat-mini-fab class="mat-accentred" [mat-menu-trigger-for]="param2" type="button">
+            <mat-icon aria-label="Icon-button with delete">delete</mat-icon>
+          </button>
+          <mat-menu #param2="matMenu">
+            <button mat-menu-item type="button" (click)="verwijderParameter(huidigeParameter)">
+              <span >Verwijder deze parameter</span>
+            </button>
+          </mat-menu>
+        </div>
+      </div>
+
+
+      <div *ngFor="let kindParameter of huidigeParameter.kinderen">
+        <app-tree-children [smartContract]="smartContract"
+                           [huidigeParameter]="kindParameter"
+                           [voogdParameter]="huidigeParameter"></app-tree-children>
+      </div>
+
+    </mat-expansion-panel>
+  </mat-accordion>
+</div>

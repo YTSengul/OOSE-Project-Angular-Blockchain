@@ -1,0 +1,1312 @@
+{
+  "contractName": "SC7",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "returnAdviezen",
+      "outputs": [
+        {
+          "name": "",
+          "type": "string[]"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "BoomAfstand1",
+          "type": "int256"
+        },
+        {
+          "name": "StationAfstand1_1",
+          "type": "int256"
+        }
+      ],
+      "name": "checkContract",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.5.0+commit.1d4f565a\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":true,\"inputs\":[],\"name\":\"returnAdviezen\",\"outputs\":[{\"name\":\"\",\"type\":\"string[]\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"BoomAfstand1\",\"type\":\"int256\"},{\"name\":\"StationAfstand1_1\",\"type\":\"int256\"}],\"name\":\"checkContract\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/C/TruffleBlockchain/Blockchain/contracts/SC7.sol\":\"SC7\"},\"evmVersion\":\"byzantium\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/C/TruffleBlockchain/Blockchain/contracts/SC7.sol\":{\"keccak256\":\"0xa79c05ea18a9f4fb987447739d83eb95bb1b02c7b241cbd2d9cec63a3d2df5c0\",\"urls\":[\"bzzr://87657f0993041c0b34c7e0edda69db098b88a9543dc76a10e93e561527c4160f\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b50610573806100206000396000f3fe60806040526004361061004c576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168063184bbae614610051578063414113d01461007c575b600080fd5b34801561005d57600080fd5b506100666100a5565b6040516100739190610499565b60405180910390f35b34801561008857600080fd5b506100a3600480360361009e91908101906103b9565b61018e565b005b60606000805480602002602001604051908101604052809291908181526020016000905b82821015610185578382906000526020600020018054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156101715780601f1061014657610100808354040283529160200191610171565b820191906000526020600020905b81548152906001019060200180831161015457829003601f168201915b5050505050815260200190600101906100c9565b50505050905090565b601882121561020c5760008060018154018082558091505090600182039060005260206000200160006040805190810160405280601281526020017f426f6f6d41667374616e64312c67726f656e000000000000000000000000000081525090919091509080519060200190610205929190610300565b50506102fc565b604181121561028a5760008060018154018082558091505090600182039060005260206000200160006040805190810160405280601681526020017f53746174696f6e41667374616e64315f312c726f6f640000000000000000000081525090919091509080519060200190610283929190610300565b50506102fb565b60008060018154018082558091505090600182039060005260206000200160006040805190810160405280601681526020017f53746174696f6e41667374616e64315f312c726f6f6400000000000000000000815250909190915090805190602001906102f8929190610300565b50505b5b5050565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f1061034157805160ff191683800117855561036f565b8280016001018555821561036f579182015b8281111561036e578251825591602001919060010190610353565b5b50905061037c9190610380565b5090565b6103a291905b8082111561039e576000816000905550600101610386565b5090565b90565b60006103b182356104eb565b905092915050565b600080604083850312156103cc57600080fd5b60006103da858286016103a5565b92505060206103eb858286016103a5565b9150509250929050565b6000610400826104c8565b80845260208401935083602082028501610419856104bb565b60005b84811015610452578383038852610434838351610463565b925061043f826104de565b915060208801975060018101905061041c565b508196508694505050505092915050565b600061046e826104d3565b8084526104828160208601602086016104f5565b61048b81610528565b602085010191505092915050565b600060208201905081810360008301526104b381846103f5565b905092915050565b6000602082019050919050565b600081519050919050565b600081519050919050565b6000602082019050919050565b6000819050919050565b60005b838110156105135780820151818401526020810190506104f8565b83811115610522576000848401525b50505050565b6000601f19601f830116905091905056fea265627a7a72305820cc210a8daf8911e3e0b81d602d3d25538d2e763687a8b334cdb22850b55188946c6578706572696d656e74616cf50037",
+  "deployedBytecode": "0x60806040526004361061004c576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168063184bbae614610051578063414113d01461007c575b600080fd5b34801561005d57600080fd5b506100666100a5565b6040516100739190610499565b60405180910390f35b34801561008857600080fd5b506100a3600480360361009e91908101906103b9565b61018e565b005b60606000805480602002602001604051908101604052809291908181526020016000905b82821015610185578382906000526020600020018054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156101715780601f1061014657610100808354040283529160200191610171565b820191906000526020600020905b81548152906001019060200180831161015457829003601f168201915b5050505050815260200190600101906100c9565b50505050905090565b601882121561020c5760008060018154018082558091505090600182039060005260206000200160006040805190810160405280601281526020017f426f6f6d41667374616e64312c67726f656e000000000000000000000000000081525090919091509080519060200190610205929190610300565b50506102fc565b604181121561028a5760008060018154018082558091505090600182039060005260206000200160006040805190810160405280601681526020017f53746174696f6e41667374616e64315f312c726f6f640000000000000000000081525090919091509080519060200190610283929190610300565b50506102fb565b60008060018154018082558091505090600182039060005260206000200160006040805190810160405280601681526020017f53746174696f6e41667374616e64315f312c726f6f6400000000000000000000815250909190915090805190602001906102f8929190610300565b50505b5b5050565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f1061034157805160ff191683800117855561036f565b8280016001018555821561036f579182015b8281111561036e578251825591602001919060010190610353565b5b50905061037c9190610380565b5090565b6103a291905b8082111561039e576000816000905550600101610386565b5090565b90565b60006103b182356104eb565b905092915050565b600080604083850312156103cc57600080fd5b60006103da858286016103a5565b92505060206103eb858286016103a5565b9150509250929050565b6000610400826104c8565b80845260208401935083602082028501610419856104bb565b60005b84811015610452578383038852610434838351610463565b925061043f826104de565b915060208801975060018101905061041c565b508196508694505050505092915050565b600061046e826104d3565b8084526104828160208601602086016104f5565b61048b81610528565b602085010191505092915050565b600060208201905081810360008301526104b381846103f5565b905092915050565b6000602082019050919050565b600081519050919050565b600081519050919050565b6000602082019050919050565b6000819050919050565b60005b838110156105135780820151818401526020810190506104f8565b83811115610522576000848401525b50505050565b6000601f19601f830116905091905056fea265627a7a72305820cc210a8daf8911e3e0b81d602d3d25538d2e763687a8b334cdb22850b55188946c6578706572696d656e74616cf50037",
+  "sourceMap": "59:400:2:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;59:400:2;;;;;;;",
+  "deployedSourceMap": "59:400:2:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;92:88;;8:9:-1;5:2;;;30:1;27;20:12;5:2;92:88:2;;;;;;;;;;;;;;;;;;;;181:276;;8:9:-1;5:2;;;30:1;27;20:12;5:2;181:276:2;;;;;;;;;;;;;;;;;;;92:88;139:15;169:8;162:15;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;92:88;:::o;181:276::-;273:2;258:12;:17;254:199;;;279:8;:35;39:1:-1;33:3;27:10;23:18;57:10;52:3;45:23;79:10;72:17;;0:93;279:35:2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;254:199;;;350:2;330:17;:22;326:123;;;356:8;:39;39:1:-1;33:3;27:10;23:18;57:10;52:3;45:23;79:10;72:17;;0:93;356:39:2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;326:123;;;407:8;:39;39:1:-1;33:3;27:10;23:18;57:10;52:3;45:23;79:10;72:17;;0:93;407:39:2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;326:123;254:199;181:276;;:::o;59:400::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;5:116:-1:-;;71:45;108:6;95:20;71:45;;;62:54;;56:65;;;;;128:362;;;247:2;235:9;226:7;222:23;218:32;215:2;;;263:1;260;253:12;215:2;298:1;315:52;359:7;350:6;339:9;335:22;315:52;;;305:62;;277:96;404:2;422:52;466:7;457:6;446:9;442:22;422:52;;;412:62;;383:97;209:281;;;;;;526:773;;673:60;727:5;673:60;;;751:6;746:3;739:19;775:4;770:3;766:14;759:21;;823:3;865:4;857:6;853:17;848:3;844:27;891:62;947:5;891:62;;;974:1;959:301;984:6;981:1;978:13;959:301;;;1046:9;1040:4;1036:20;1031:3;1024:33;1072:70;1137:4;1128:6;1122:13;1072:70;;;1064:78;;1159:66;1218:6;1159:66;;;1149:76;;1248:4;1243:3;1239:14;1232:21;;1006:1;1003;999:9;994:14;;959:301;;;963:14;1273:4;1266:11;;1290:3;1283:10;;652:647;;;;;;;;;1307:292;;1405:35;1434:5;1405:35;;;1457:6;1452:3;1445:19;1469:63;1525:6;1518:4;1513:3;1509:14;1502:4;1495:5;1491:16;1469:63;;;1564:29;1586:6;1564:29;;;1557:4;1552:3;1548:14;1544:50;1537:57;;1385:214;;;;;;1606:365;;1776:2;1765:9;1761:18;1753:26;;1826:9;1820:4;1816:20;1812:1;1801:9;1797:17;1790:47;1851:110;1956:4;1947:6;1851:110;;;1843:118;;1747:224;;;;;1980:127;;2095:4;2087:6;2083:17;2072:28;;2064:43;;;;2116:113;;2218:5;2212:12;2202:22;;2196:33;;;;2236:88;;2313:5;2307:12;2297:22;;2291:33;;;;2332:128;;2449:4;2441:6;2437:17;2426:28;;2419:41;;;;2468:78;;2536:5;2525:16;;2519:27;;;;2554:268;2619:1;2626:101;2640:6;2637:1;2634:13;2626:101;;;2716:1;2711:3;2707:11;2701:18;2697:1;2692:3;2688:11;2681:39;2662:2;2659:1;2655:10;2650:15;;2626:101;;;2742:6;2739:1;2736:13;2733:2;;;2807:1;2798:6;2793:3;2789:16;2782:27;2733:2;2603:219;;;;;2830:97;;2918:2;2914:7;2909:2;2902:5;2898:14;2894:28;2884:38;;2878:49;;;",
+  "source": "pragma experimental ABIEncoderV2;\npragma solidity ^0.5.0;\n\ncontract SC7 {string[] adviezen;\nfunction returnAdviezen() public view returns (string[] memory) {\n    return adviezen;\n}\nfunction checkContract(\nint BoomAfstand1, int StationAfstand1_1) public {if (BoomAfstand1 < 24) { adviezen.push(\"BoomAfstand1,groen\"); } \nelse { if (StationAfstand1_1 < 65) { adviezen.push(\"StationAfstand1_1,rood\"); } \nelse { adviezen.push(\"StationAfstand1_1,rood\"); } \n } \n\n}\n}\r\n",
+  "sourcePath": "C:/TruffleBlockchain/Blockchain/contracts/SC7.sol",
+  "ast": {
+    "absolutePath": "/C/TruffleBlockchain/Blockchain/contracts/SC7.sol",
+    "exportedSymbols": {
+      "SC7": [
+        164
+      ]
+    },
+    "id": 165,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 112,
+        "literals": [
+          "experimental",
+          "ABIEncoderV2"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:33:2"
+      },
+      {
+        "id": 113,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "34:23:2"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 164,
+        "linearizedBaseContracts": [
+          164
+        ],
+        "name": "SC7",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 116,
+            "name": "adviezen",
+            "nodeType": "VariableDeclaration",
+            "scope": 164,
+            "src": "73:17:2",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_array$_t_string_storage_$dyn_storage",
+              "typeString": "string[]"
+            },
+            "typeName": {
+              "baseType": {
+                "id": 114,
+                "name": "string",
+                "nodeType": "ElementaryTypeName",
+                "src": "73:6:2",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                }
+              },
+              "id": 115,
+              "length": null,
+              "nodeType": "ArrayTypeName",
+              "src": "73:8:2",
+              "typeDescriptions": {
+                "typeIdentifier": "t_array$_t_string_storage_$dyn_storage_ptr",
+                "typeString": "string[]"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "body": {
+              "id": 124,
+              "nodeType": "Block",
+              "src": "156:24:2",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 122,
+                    "name": "adviezen",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 116,
+                    "src": "169:8:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_string_storage_$dyn_storage",
+                      "typeString": "string storage ref[] storage ref"
+                    }
+                  },
+                  "functionReturnParameters": 121,
+                  "id": 123,
+                  "nodeType": "Return",
+                  "src": "162:15:2"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 125,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "returnAdviezen",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 117,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "115:2:2"
+            },
+            "returnParameters": {
+              "id": 121,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 120,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 125,
+                  "src": "139:15:2",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_string_memory_$dyn_memory_ptr",
+                    "typeString": "string[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 118,
+                      "name": "string",
+                      "nodeType": "ElementaryTypeName",
+                      "src": "139:6:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_storage_ptr",
+                        "typeString": "string"
+                      }
+                    },
+                    "id": 119,
+                    "length": null,
+                    "nodeType": "ArrayTypeName",
+                    "src": "139:8:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_string_storage_$dyn_storage_ptr",
+                      "typeString": "string[]"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "138:17:2"
+            },
+            "scope": 164,
+            "src": "92:88:2",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 162,
+              "nodeType": "Block",
+              "src": "253:204:2",
+              "statements": [
+                {
+                  "condition": {
+                    "argumentTypes": null,
+                    "commonType": {
+                      "typeIdentifier": "t_int256",
+                      "typeString": "int256"
+                    },
+                    "id": 134,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftExpression": {
+                      "argumentTypes": null,
+                      "id": 132,
+                      "name": "BoomAfstand1",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 127,
+                      "src": "258:12:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_int256",
+                        "typeString": "int256"
+                      }
+                    },
+                    "nodeType": "BinaryOperation",
+                    "operator": "<",
+                    "rightExpression": {
+                      "argumentTypes": null,
+                      "hexValue": "3234",
+                      "id": 133,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "number",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "273:2:2",
+                      "subdenomination": null,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_rational_24_by_1",
+                        "typeString": "int_const 24"
+                      },
+                      "value": "24"
+                    },
+                    "src": "258:17:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "falseBody": {
+                    "id": 160,
+                    "nodeType": "Block",
+                    "src": "324:129:2",
+                    "statements": [
+                      {
+                        "condition": {
+                          "argumentTypes": null,
+                          "commonType": {
+                            "typeIdentifier": "t_int256",
+                            "typeString": "int256"
+                          },
+                          "id": 144,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "leftExpression": {
+                            "argumentTypes": null,
+                            "id": 142,
+                            "name": "StationAfstand1_1",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 129,
+                            "src": "330:17:2",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_int256",
+                              "typeString": "int256"
+                            }
+                          },
+                          "nodeType": "BinaryOperation",
+                          "operator": "<",
+                          "rightExpression": {
+                            "argumentTypes": null,
+                            "hexValue": "3635",
+                            "id": 143,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": true,
+                            "kind": "number",
+                            "lValueRequested": false,
+                            "nodeType": "Literal",
+                            "src": "350:2:2",
+                            "subdenomination": null,
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_rational_65_by_1",
+                              "typeString": "int_const 65"
+                            },
+                            "value": "65"
+                          },
+                          "src": "330:22:2",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_bool",
+                            "typeString": "bool"
+                          }
+                        },
+                        "falseBody": {
+                          "id": 158,
+                          "nodeType": "Block",
+                          "src": "405:44:2",
+                          "statements": [
+                            {
+                              "expression": {
+                                "argumentTypes": null,
+                                "arguments": [
+                                  {
+                                    "argumentTypes": null,
+                                    "hexValue": "53746174696f6e41667374616e64315f312c726f6f64",
+                                    "id": 155,
+                                    "isConstant": false,
+                                    "isLValue": false,
+                                    "isPure": true,
+                                    "kind": "string",
+                                    "lValueRequested": false,
+                                    "nodeType": "Literal",
+                                    "src": "421:24:2",
+                                    "subdenomination": null,
+                                    "typeDescriptions": {
+                                      "typeIdentifier": "t_stringliteral_f09dde449f26c72f5330ce10840bef63e43bfa954a4987f036e1bbd6936a5ba2",
+                                      "typeString": "literal_string \"StationAfstand1_1,rood\""
+                                    },
+                                    "value": "StationAfstand1_1,rood"
+                                  }
+                                ],
+                                "expression": {
+                                  "argumentTypes": [
+                                    {
+                                      "typeIdentifier": "t_stringliteral_f09dde449f26c72f5330ce10840bef63e43bfa954a4987f036e1bbd6936a5ba2",
+                                      "typeString": "literal_string \"StationAfstand1_1,rood\""
+                                    }
+                                  ],
+                                  "expression": {
+                                    "argumentTypes": null,
+                                    "id": 152,
+                                    "name": "adviezen",
+                                    "nodeType": "Identifier",
+                                    "overloadedDeclarations": [],
+                                    "referencedDeclaration": 116,
+                                    "src": "407:8:2",
+                                    "typeDescriptions": {
+                                      "typeIdentifier": "t_array$_t_string_storage_$dyn_storage",
+                                      "typeString": "string storage ref[] storage ref"
+                                    }
+                                  },
+                                  "id": 154,
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": false,
+                                  "lValueRequested": false,
+                                  "memberName": "push",
+                                  "nodeType": "MemberAccess",
+                                  "referencedDeclaration": null,
+                                  "src": "407:13:2",
+                                  "typeDescriptions": {
+                                    "typeIdentifier": "t_function_arraypush_nonpayable$_t_string_storage_$returns$_t_uint256_$",
+                                    "typeString": "function (string storage ref) returns (uint256)"
+                                  }
+                                },
+                                "id": 156,
+                                "isConstant": false,
+                                "isLValue": false,
+                                "isPure": false,
+                                "kind": "functionCall",
+                                "lValueRequested": false,
+                                "names": [],
+                                "nodeType": "FunctionCall",
+                                "src": "407:39:2",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_uint256",
+                                  "typeString": "uint256"
+                                }
+                              },
+                              "id": 157,
+                              "nodeType": "ExpressionStatement",
+                              "src": "407:39:2"
+                            }
+                          ]
+                        },
+                        "id": 159,
+                        "nodeType": "IfStatement",
+                        "src": "326:123:2",
+                        "trueBody": {
+                          "id": 151,
+                          "nodeType": "Block",
+                          "src": "354:44:2",
+                          "statements": [
+                            {
+                              "expression": {
+                                "argumentTypes": null,
+                                "arguments": [
+                                  {
+                                    "argumentTypes": null,
+                                    "hexValue": "53746174696f6e41667374616e64315f312c726f6f64",
+                                    "id": 148,
+                                    "isConstant": false,
+                                    "isLValue": false,
+                                    "isPure": true,
+                                    "kind": "string",
+                                    "lValueRequested": false,
+                                    "nodeType": "Literal",
+                                    "src": "370:24:2",
+                                    "subdenomination": null,
+                                    "typeDescriptions": {
+                                      "typeIdentifier": "t_stringliteral_f09dde449f26c72f5330ce10840bef63e43bfa954a4987f036e1bbd6936a5ba2",
+                                      "typeString": "literal_string \"StationAfstand1_1,rood\""
+                                    },
+                                    "value": "StationAfstand1_1,rood"
+                                  }
+                                ],
+                                "expression": {
+                                  "argumentTypes": [
+                                    {
+                                      "typeIdentifier": "t_stringliteral_f09dde449f26c72f5330ce10840bef63e43bfa954a4987f036e1bbd6936a5ba2",
+                                      "typeString": "literal_string \"StationAfstand1_1,rood\""
+                                    }
+                                  ],
+                                  "expression": {
+                                    "argumentTypes": null,
+                                    "id": 145,
+                                    "name": "adviezen",
+                                    "nodeType": "Identifier",
+                                    "overloadedDeclarations": [],
+                                    "referencedDeclaration": 116,
+                                    "src": "356:8:2",
+                                    "typeDescriptions": {
+                                      "typeIdentifier": "t_array$_t_string_storage_$dyn_storage",
+                                      "typeString": "string storage ref[] storage ref"
+                                    }
+                                  },
+                                  "id": 147,
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": false,
+                                  "lValueRequested": false,
+                                  "memberName": "push",
+                                  "nodeType": "MemberAccess",
+                                  "referencedDeclaration": null,
+                                  "src": "356:13:2",
+                                  "typeDescriptions": {
+                                    "typeIdentifier": "t_function_arraypush_nonpayable$_t_string_storage_$returns$_t_uint256_$",
+                                    "typeString": "function (string storage ref) returns (uint256)"
+                                  }
+                                },
+                                "id": 149,
+                                "isConstant": false,
+                                "isLValue": false,
+                                "isPure": false,
+                                "kind": "functionCall",
+                                "lValueRequested": false,
+                                "names": [],
+                                "nodeType": "FunctionCall",
+                                "src": "356:39:2",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_uint256",
+                                  "typeString": "uint256"
+                                }
+                              },
+                              "id": 150,
+                              "nodeType": "ExpressionStatement",
+                              "src": "356:39:2"
+                            }
+                          ]
+                        }
+                      }
+                    ]
+                  },
+                  "id": 161,
+                  "nodeType": "IfStatement",
+                  "src": "254:199:2",
+                  "trueBody": {
+                    "id": 141,
+                    "nodeType": "Block",
+                    "src": "277:40:2",
+                    "statements": [
+                      {
+                        "expression": {
+                          "argumentTypes": null,
+                          "arguments": [
+                            {
+                              "argumentTypes": null,
+                              "hexValue": "426f6f6d41667374616e64312c67726f656e",
+                              "id": 138,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "kind": "string",
+                              "lValueRequested": false,
+                              "nodeType": "Literal",
+                              "src": "293:20:2",
+                              "subdenomination": null,
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_stringliteral_d0a39aa8b4409650e811b918eb18d144c19701be511f8aa4800ffd224ae81d45",
+                                "typeString": "literal_string \"BoomAfstand1,groen\""
+                              },
+                              "value": "BoomAfstand1,groen"
+                            }
+                          ],
+                          "expression": {
+                            "argumentTypes": [
+                              {
+                                "typeIdentifier": "t_stringliteral_d0a39aa8b4409650e811b918eb18d144c19701be511f8aa4800ffd224ae81d45",
+                                "typeString": "literal_string \"BoomAfstand1,groen\""
+                              }
+                            ],
+                            "expression": {
+                              "argumentTypes": null,
+                              "id": 135,
+                              "name": "adviezen",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 116,
+                              "src": "279:8:2",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_array$_t_string_storage_$dyn_storage",
+                                "typeString": "string storage ref[] storage ref"
+                              }
+                            },
+                            "id": 137,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": false,
+                            "lValueRequested": false,
+                            "memberName": "push",
+                            "nodeType": "MemberAccess",
+                            "referencedDeclaration": null,
+                            "src": "279:13:2",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_function_arraypush_nonpayable$_t_string_storage_$returns$_t_uint256_$",
+                              "typeString": "function (string storage ref) returns (uint256)"
+                            }
+                          },
+                          "id": 139,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "kind": "functionCall",
+                          "lValueRequested": false,
+                          "names": [],
+                          "nodeType": "FunctionCall",
+                          "src": "279:35:2",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        "id": 140,
+                        "nodeType": "ExpressionStatement",
+                        "src": "279:35:2"
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 163,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "checkContract",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 130,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 127,
+                  "name": "BoomAfstand1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 163,
+                  "src": "205:16:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_int256",
+                    "typeString": "int256"
+                  },
+                  "typeName": {
+                    "id": 126,
+                    "name": "int",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "205:3:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_int256",
+                      "typeString": "int256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 129,
+                  "name": "StationAfstand1_1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 163,
+                  "src": "223:21:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_int256",
+                    "typeString": "int256"
+                  },
+                  "typeName": {
+                    "id": 128,
+                    "name": "int",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "223:3:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_int256",
+                      "typeString": "int256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "203:42:2"
+            },
+            "returnParameters": {
+              "id": 131,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "253:0:2"
+            },
+            "scope": 164,
+            "src": "181:276:2",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 165,
+        "src": "59:400:2"
+      }
+    ],
+    "src": "0:461:2"
+  },
+  "legacyAST": {
+    "absolutePath": "/C/TruffleBlockchain/Blockchain/contracts/SC7.sol",
+    "exportedSymbols": {
+      "SC7": [
+        164
+      ]
+    },
+    "id": 165,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 112,
+        "literals": [
+          "experimental",
+          "ABIEncoderV2"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:33:2"
+      },
+      {
+        "id": 113,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "34:23:2"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 164,
+        "linearizedBaseContracts": [
+          164
+        ],
+        "name": "SC7",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 116,
+            "name": "adviezen",
+            "nodeType": "VariableDeclaration",
+            "scope": 164,
+            "src": "73:17:2",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_array$_t_string_storage_$dyn_storage",
+              "typeString": "string[]"
+            },
+            "typeName": {
+              "baseType": {
+                "id": 114,
+                "name": "string",
+                "nodeType": "ElementaryTypeName",
+                "src": "73:6:2",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                }
+              },
+              "id": 115,
+              "length": null,
+              "nodeType": "ArrayTypeName",
+              "src": "73:8:2",
+              "typeDescriptions": {
+                "typeIdentifier": "t_array$_t_string_storage_$dyn_storage_ptr",
+                "typeString": "string[]"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "body": {
+              "id": 124,
+              "nodeType": "Block",
+              "src": "156:24:2",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 122,
+                    "name": "adviezen",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 116,
+                    "src": "169:8:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_string_storage_$dyn_storage",
+                      "typeString": "string storage ref[] storage ref"
+                    }
+                  },
+                  "functionReturnParameters": 121,
+                  "id": 123,
+                  "nodeType": "Return",
+                  "src": "162:15:2"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 125,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "returnAdviezen",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 117,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "115:2:2"
+            },
+            "returnParameters": {
+              "id": 121,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 120,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 125,
+                  "src": "139:15:2",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_string_memory_$dyn_memory_ptr",
+                    "typeString": "string[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 118,
+                      "name": "string",
+                      "nodeType": "ElementaryTypeName",
+                      "src": "139:6:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_storage_ptr",
+                        "typeString": "string"
+                      }
+                    },
+                    "id": 119,
+                    "length": null,
+                    "nodeType": "ArrayTypeName",
+                    "src": "139:8:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_string_storage_$dyn_storage_ptr",
+                      "typeString": "string[]"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "138:17:2"
+            },
+            "scope": 164,
+            "src": "92:88:2",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 162,
+              "nodeType": "Block",
+              "src": "253:204:2",
+              "statements": [
+                {
+                  "condition": {
+                    "argumentTypes": null,
+                    "commonType": {
+                      "typeIdentifier": "t_int256",
+                      "typeString": "int256"
+                    },
+                    "id": 134,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftExpression": {
+                      "argumentTypes": null,
+                      "id": 132,
+                      "name": "BoomAfstand1",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 127,
+                      "src": "258:12:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_int256",
+                        "typeString": "int256"
+                      }
+                    },
+                    "nodeType": "BinaryOperation",
+                    "operator": "<",
+                    "rightExpression": {
+                      "argumentTypes": null,
+                      "hexValue": "3234",
+                      "id": 133,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "number",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "273:2:2",
+                      "subdenomination": null,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_rational_24_by_1",
+                        "typeString": "int_const 24"
+                      },
+                      "value": "24"
+                    },
+                    "src": "258:17:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "falseBody": {
+                    "id": 160,
+                    "nodeType": "Block",
+                    "src": "324:129:2",
+                    "statements": [
+                      {
+                        "condition": {
+                          "argumentTypes": null,
+                          "commonType": {
+                            "typeIdentifier": "t_int256",
+                            "typeString": "int256"
+                          },
+                          "id": 144,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "leftExpression": {
+                            "argumentTypes": null,
+                            "id": 142,
+                            "name": "StationAfstand1_1",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 129,
+                            "src": "330:17:2",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_int256",
+                              "typeString": "int256"
+                            }
+                          },
+                          "nodeType": "BinaryOperation",
+                          "operator": "<",
+                          "rightExpression": {
+                            "argumentTypes": null,
+                            "hexValue": "3635",
+                            "id": 143,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": true,
+                            "kind": "number",
+                            "lValueRequested": false,
+                            "nodeType": "Literal",
+                            "src": "350:2:2",
+                            "subdenomination": null,
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_rational_65_by_1",
+                              "typeString": "int_const 65"
+                            },
+                            "value": "65"
+                          },
+                          "src": "330:22:2",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_bool",
+                            "typeString": "bool"
+                          }
+                        },
+                        "falseBody": {
+                          "id": 158,
+                          "nodeType": "Block",
+                          "src": "405:44:2",
+                          "statements": [
+                            {
+                              "expression": {
+                                "argumentTypes": null,
+                                "arguments": [
+                                  {
+                                    "argumentTypes": null,
+                                    "hexValue": "53746174696f6e41667374616e64315f312c726f6f64",
+                                    "id": 155,
+                                    "isConstant": false,
+                                    "isLValue": false,
+                                    "isPure": true,
+                                    "kind": "string",
+                                    "lValueRequested": false,
+                                    "nodeType": "Literal",
+                                    "src": "421:24:2",
+                                    "subdenomination": null,
+                                    "typeDescriptions": {
+                                      "typeIdentifier": "t_stringliteral_f09dde449f26c72f5330ce10840bef63e43bfa954a4987f036e1bbd6936a5ba2",
+                                      "typeString": "literal_string \"StationAfstand1_1,rood\""
+                                    },
+                                    "value": "StationAfstand1_1,rood"
+                                  }
+                                ],
+                                "expression": {
+                                  "argumentTypes": [
+                                    {
+                                      "typeIdentifier": "t_stringliteral_f09dde449f26c72f5330ce10840bef63e43bfa954a4987f036e1bbd6936a5ba2",
+                                      "typeString": "literal_string \"StationAfstand1_1,rood\""
+                                    }
+                                  ],
+                                  "expression": {
+                                    "argumentTypes": null,
+                                    "id": 152,
+                                    "name": "adviezen",
+                                    "nodeType": "Identifier",
+                                    "overloadedDeclarations": [],
+                                    "referencedDeclaration": 116,
+                                    "src": "407:8:2",
+                                    "typeDescriptions": {
+                                      "typeIdentifier": "t_array$_t_string_storage_$dyn_storage",
+                                      "typeString": "string storage ref[] storage ref"
+                                    }
+                                  },
+                                  "id": 154,
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": false,
+                                  "lValueRequested": false,
+                                  "memberName": "push",
+                                  "nodeType": "MemberAccess",
+                                  "referencedDeclaration": null,
+                                  "src": "407:13:2",
+                                  "typeDescriptions": {
+                                    "typeIdentifier": "t_function_arraypush_nonpayable$_t_string_storage_$returns$_t_uint256_$",
+                                    "typeString": "function (string storage ref) returns (uint256)"
+                                  }
+                                },
+                                "id": 156,
+                                "isConstant": false,
+                                "isLValue": false,
+                                "isPure": false,
+                                "kind": "functionCall",
+                                "lValueRequested": false,
+                                "names": [],
+                                "nodeType": "FunctionCall",
+                                "src": "407:39:2",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_uint256",
+                                  "typeString": "uint256"
+                                }
+                              },
+                              "id": 157,
+                              "nodeType": "ExpressionStatement",
+                              "src": "407:39:2"
+                            }
+                          ]
+                        },
+                        "id": 159,
+                        "nodeType": "IfStatement",
+                        "src": "326:123:2",
+                        "trueBody": {
+                          "id": 151,
+                          "nodeType": "Block",
+                          "src": "354:44:2",
+                          "statements": [
+                            {
+                              "expression": {
+                                "argumentTypes": null,
+                                "arguments": [
+                                  {
+                                    "argumentTypes": null,
+                                    "hexValue": "53746174696f6e41667374616e64315f312c726f6f64",
+                                    "id": 148,
+                                    "isConstant": false,
+                                    "isLValue": false,
+                                    "isPure": true,
+                                    "kind": "string",
+                                    "lValueRequested": false,
+                                    "nodeType": "Literal",
+                                    "src": "370:24:2",
+                                    "subdenomination": null,
+                                    "typeDescriptions": {
+                                      "typeIdentifier": "t_stringliteral_f09dde449f26c72f5330ce10840bef63e43bfa954a4987f036e1bbd6936a5ba2",
+                                      "typeString": "literal_string \"StationAfstand1_1,rood\""
+                                    },
+                                    "value": "StationAfstand1_1,rood"
+                                  }
+                                ],
+                                "expression": {
+                                  "argumentTypes": [
+                                    {
+                                      "typeIdentifier": "t_stringliteral_f09dde449f26c72f5330ce10840bef63e43bfa954a4987f036e1bbd6936a5ba2",
+                                      "typeString": "literal_string \"StationAfstand1_1,rood\""
+                                    }
+                                  ],
+                                  "expression": {
+                                    "argumentTypes": null,
+                                    "id": 145,
+                                    "name": "adviezen",
+                                    "nodeType": "Identifier",
+                                    "overloadedDeclarations": [],
+                                    "referencedDeclaration": 116,
+                                    "src": "356:8:2",
+                                    "typeDescriptions": {
+                                      "typeIdentifier": "t_array$_t_string_storage_$dyn_storage",
+                                      "typeString": "string storage ref[] storage ref"
+                                    }
+                                  },
+                                  "id": 147,
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": false,
+                                  "lValueRequested": false,
+                                  "memberName": "push",
+                                  "nodeType": "MemberAccess",
+                                  "referencedDeclaration": null,
+                                  "src": "356:13:2",
+                                  "typeDescriptions": {
+                                    "typeIdentifier": "t_function_arraypush_nonpayable$_t_string_storage_$returns$_t_uint256_$",
+                                    "typeString": "function (string storage ref) returns (uint256)"
+                                  }
+                                },
+                                "id": 149,
+                                "isConstant": false,
+                                "isLValue": false,
+                                "isPure": false,
+                                "kind": "functionCall",
+                                "lValueRequested": false,
+                                "names": [],
+                                "nodeType": "FunctionCall",
+                                "src": "356:39:2",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_uint256",
+                                  "typeString": "uint256"
+                                }
+                              },
+                              "id": 150,
+                              "nodeType": "ExpressionStatement",
+                              "src": "356:39:2"
+                            }
+                          ]
+                        }
+                      }
+                    ]
+                  },
+                  "id": 161,
+                  "nodeType": "IfStatement",
+                  "src": "254:199:2",
+                  "trueBody": {
+                    "id": 141,
+                    "nodeType": "Block",
+                    "src": "277:40:2",
+                    "statements": [
+                      {
+                        "expression": {
+                          "argumentTypes": null,
+                          "arguments": [
+                            {
+                              "argumentTypes": null,
+                              "hexValue": "426f6f6d41667374616e64312c67726f656e",
+                              "id": 138,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "kind": "string",
+                              "lValueRequested": false,
+                              "nodeType": "Literal",
+                              "src": "293:20:2",
+                              "subdenomination": null,
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_stringliteral_d0a39aa8b4409650e811b918eb18d144c19701be511f8aa4800ffd224ae81d45",
+                                "typeString": "literal_string \"BoomAfstand1,groen\""
+                              },
+                              "value": "BoomAfstand1,groen"
+                            }
+                          ],
+                          "expression": {
+                            "argumentTypes": [
+                              {
+                                "typeIdentifier": "t_stringliteral_d0a39aa8b4409650e811b918eb18d144c19701be511f8aa4800ffd224ae81d45",
+                                "typeString": "literal_string \"BoomAfstand1,groen\""
+                              }
+                            ],
+                            "expression": {
+                              "argumentTypes": null,
+                              "id": 135,
+                              "name": "adviezen",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 116,
+                              "src": "279:8:2",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_array$_t_string_storage_$dyn_storage",
+                                "typeString": "string storage ref[] storage ref"
+                              }
+                            },
+                            "id": 137,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": false,
+                            "lValueRequested": false,
+                            "memberName": "push",
+                            "nodeType": "MemberAccess",
+                            "referencedDeclaration": null,
+                            "src": "279:13:2",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_function_arraypush_nonpayable$_t_string_storage_$returns$_t_uint256_$",
+                              "typeString": "function (string storage ref) returns (uint256)"
+                            }
+                          },
+                          "id": 139,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "kind": "functionCall",
+                          "lValueRequested": false,
+                          "names": [],
+                          "nodeType": "FunctionCall",
+                          "src": "279:35:2",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        "id": 140,
+                        "nodeType": "ExpressionStatement",
+                        "src": "279:35:2"
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 163,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "checkContract",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 130,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 127,
+                  "name": "BoomAfstand1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 163,
+                  "src": "205:16:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_int256",
+                    "typeString": "int256"
+                  },
+                  "typeName": {
+                    "id": 126,
+                    "name": "int",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "205:3:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_int256",
+                      "typeString": "int256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 129,
+                  "name": "StationAfstand1_1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 163,
+                  "src": "223:21:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_int256",
+                    "typeString": "int256"
+                  },
+                  "typeName": {
+                    "id": 128,
+                    "name": "int",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "223:3:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_int256",
+                      "typeString": "int256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "203:42:2"
+            },
+            "returnParameters": {
+              "id": 131,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "253:0:2"
+            },
+            "scope": 164,
+            "src": "181:276:2",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 165,
+        "src": "59:400:2"
+      }
+    ],
+    "src": "0:461:2"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.0+commit.1d4f565a.Emscripten.clang"
+  },
+  "networks": {
+    "5777": {
+      "events": {},
+      "links": {},
+      "address": "0xe267B9e52b6d8B9fa9ed3094E05fB2bBC06200e7",
+      "transactionHash": "0xf8799c12a6f20cbcaf76ba4d1ade7c1765cb8c9f940d04aeee87b4d76dd30d51"
+    }
+  },
+  "schemaVersion": "3.0.9",
+  "updatedAt": "2019-06-03T11:05:40.058Z",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}

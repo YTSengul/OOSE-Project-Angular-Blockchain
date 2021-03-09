@@ -1,0 +1,961 @@
+{
+  "contractName": "SC1",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "returnAdviezen",
+      "outputs": [
+        {
+          "name": "",
+          "type": "string[]"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "StationAfstand1",
+          "type": "int256"
+        }
+      ],
+      "name": "checkContract",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.5.0+commit.1d4f565a\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":true,\"inputs\":[],\"name\":\"returnAdviezen\",\"outputs\":[{\"name\":\"\",\"type\":\"string[]\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"StationAfstand1\",\"type\":\"int256\"}],\"name\":\"checkContract\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/C/TruffleBlockchain/Blockchain/contracts/SC1.sol\":\"SC1\"},\"evmVersion\":\"byzantium\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/C/TruffleBlockchain/Blockchain/contracts/SC1.sol\":{\"keccak256\":\"0xdd6bcee8d00d64bbdc602a591ed7e20c6989408bf7cc658a175d3c34e25a064f\",\"urls\":[\"bzzr://23fcc22eb274f2125d5f270e79843367baf17a68a3454073395a26bfa8075a7f\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b506104e0806100206000396000f3fe60806040526004361061004c576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168063184bbae614610051578063df0861651461007c575b600080fd5b34801561005d57600080fd5b506100666100a5565b6040516100739190610406565b60405180910390f35b34801561008857600080fd5b506100a3600480360361009e9190810190610339565b61018e565b005b60606000805480602002602001604051908101604052809291908181526020016000905b82821015610185578382906000526020600020018054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156101715780601f1061014657610100808354040283529160200191610171565b820191906000526020600020905b81548152906001019060200180831161015457829003601f168201915b5050505050815260200190600101906100c9565b50505050905090565b602381131561020c5760008060018154018082558091505090600182039060005260206000200160006040805190810160405280601481526020017f53746174696f6e41667374616e64312c6e756c6c00000000000000000000000081525090919091509080519060200190610205929190610280565b505061027d565b60008060018154018082558091505090600182039060005260206000200160006040805190810160405280601481526020017f53746174696f6e41667374616e64312c726f6f640000000000000000000000008152509091909150908051906020019061027a929190610280565b50505b50565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f106102c157805160ff19168380011785556102ef565b828001600101855582156102ef579182015b828111156102ee5782518255916020019190600101906102d3565b5b5090506102fc9190610300565b5090565b61032291905b8082111561031e576000816000905550600101610306565b5090565b90565b60006103318235610458565b905092915050565b60006020828403121561034b57600080fd5b600061035984828501610325565b91505092915050565b600061036d82610435565b8084526020840193508360208202850161038685610428565b60005b848110156103bf5783830388526103a18383516103d0565b92506103ac8261044b565b9150602088019750600181019050610389565b508196508694505050505092915050565b60006103db82610440565b8084526103ef816020860160208601610462565b6103f881610495565b602085010191505092915050565b600060208201905081810360008301526104208184610362565b905092915050565b6000602082019050919050565b600081519050919050565b600081519050919050565b6000602082019050919050565b6000819050919050565b60005b83811015610480578082015181840152602081019050610465565b8381111561048f576000848401525b50505050565b6000601f19601f830116905091905056fea265627a7a72305820b55ddb9e44022052f910e2e2621167c5c30f4f7c242f5bdd0ca643469d7e3b016c6578706572696d656e74616cf50037",
+  "deployedBytecode": "0x60806040526004361061004c576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168063184bbae614610051578063df0861651461007c575b600080fd5b34801561005d57600080fd5b506100666100a5565b6040516100739190610406565b60405180910390f35b34801561008857600080fd5b506100a3600480360361009e9190810190610339565b61018e565b005b60606000805480602002602001604051908101604052809291908181526020016000905b82821015610185578382906000526020600020018054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156101715780601f1061014657610100808354040283529160200191610171565b820191906000526020600020905b81548152906001019060200180831161015457829003601f168201915b5050505050815260200190600101906100c9565b50505050905090565b602381131561020c5760008060018154018082558091505090600182039060005260206000200160006040805190810160405280601481526020017f53746174696f6e41667374616e64312c6e756c6c00000000000000000000000081525090919091509080519060200190610205929190610280565b505061027d565b60008060018154018082558091505090600182039060005260206000200160006040805190810160405280601481526020017f53746174696f6e41667374616e64312c726f6f640000000000000000000000008152509091909150908051906020019061027a929190610280565b50505b50565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f106102c157805160ff19168380011785556102ef565b828001600101855582156102ef579182015b828111156102ee5782518255916020019190600101906102d3565b5b5090506102fc9190610300565b5090565b61032291905b8082111561031e576000816000905550600101610306565b5090565b90565b60006103318235610458565b905092915050565b60006020828403121561034b57600080fd5b600061035984828501610325565b91505092915050565b600061036d82610435565b8084526020840193508360208202850161038685610428565b60005b848110156103bf5783830388526103a18383516103d0565b92506103ac8261044b565b9150602088019750600181019050610389565b508196508694505050505092915050565b60006103db82610440565b8084526103ef816020860160208601610462565b6103f881610495565b602085010191505092915050565b600060208201905081810360008301526104208184610362565b905092915050565b6000602082019050919050565b600081519050919050565b600081519050919050565b6000602082019050919050565b6000819050919050565b60005b83811015610480578082015181840152602081019050610465565b8381111561048f576000848401525b50505050565b6000601f19601f830116905091905056fea265627a7a72305820b55ddb9e44022052f910e2e2621167c5c30f4f7c242f5bdd0ca643469d7e3b016c6578706572696d656e74616cf50037",
+  "sourceMap": "59:298:1:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;59:298:1;;;;;;;",
+  "deployedSourceMap": "59:298:1:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;92:88;;8:9:-1;5:2;;;30:1;27;20:12;5:2;92:88:1;;;;;;;;;;;;;;;;;;;;181:174;;8:9:-1;5:2;;;30:1;27;20:12;5:2;181:174:1;;;;;;;;;;;;;;;;;;;92:88;139:15;169:8;162:15;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;92:88;:::o;181:174::-;256:2;238:15;:20;234:117;;;262:8;:37;39:1:-1;33:3;27:10;23:18;57:10;52:3;45:23;79:10;72:17;;0:93;262:37:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;234:117;;;311:8;:37;39:1:-1;33:3;27:10;23:18;57:10;52:3;45:23;79:10;72:17;;0:93;311:37:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;234:117;181:174;:::o;59:298::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;5:116:-1:-;;71:45;108:6;95:20;71:45;;;62:54;;56:65;;;;;128:239;;231:2;219:9;210:7;206:23;202:32;199:2;;;247:1;244;237:12;199:2;282:1;299:52;343:7;334:6;323:9;319:22;299:52;;;289:62;;261:96;193:174;;;;;403:773;;550:60;604:5;550:60;;;628:6;623:3;616:19;652:4;647:3;643:14;636:21;;700:3;742:4;734:6;730:17;725:3;721:27;768:62;824:5;768:62;;;851:1;836:301;861:6;858:1;855:13;836:301;;;923:9;917:4;913:20;908:3;901:33;949:70;1014:4;1005:6;999:13;949:70;;;941:78;;1036:66;1095:6;1036:66;;;1026:76;;1125:4;1120:3;1116:14;1109:21;;883:1;880;876:9;871:14;;836:301;;;840:14;1150:4;1143:11;;1167:3;1160:10;;529:647;;;;;;;;;1184:292;;1282:35;1311:5;1282:35;;;1334:6;1329:3;1322:19;1346:63;1402:6;1395:4;1390:3;1386:14;1379:4;1372:5;1368:16;1346:63;;;1441:29;1463:6;1441:29;;;1434:4;1429:3;1425:14;1421:50;1414:57;;1262:214;;;;;;1483:365;;1653:2;1642:9;1638:18;1630:26;;1703:9;1697:4;1693:20;1689:1;1678:9;1674:17;1667:47;1728:110;1833:4;1824:6;1728:110;;;1720:118;;1624:224;;;;;1857:127;;1972:4;1964:6;1960:17;1949:28;;1941:43;;;;1993:113;;2095:5;2089:12;2079:22;;2073:33;;;;2113:88;;2190:5;2184:12;2174:22;;2168:33;;;;2209:128;;2326:4;2318:6;2314:17;2303:28;;2296:41;;;;2345:78;;2413:5;2402:16;;2396:27;;;;2431:268;2496:1;2503:101;2517:6;2514:1;2511:13;2503:101;;;2593:1;2588:3;2584:11;2578:18;2574:1;2569:3;2565:11;2558:39;2539:2;2536:1;2532:10;2527:15;;2503:101;;;2619:6;2616:1;2613:13;2610:2;;;2684:1;2675:6;2670:3;2666:16;2659:27;2610:2;2480:219;;;;;2707:97;;2795:2;2791:7;2786:2;2779:5;2775:14;2771:28;2761:38;;2755:49;;;",
+  "source": "pragma experimental ABIEncoderV2;\npragma solidity ^0.5.0;\n\ncontract SC1 {string[] adviezen;\nfunction returnAdviezen() public view returns (string[] memory) {\n    return adviezen;\n}\nfunction checkContract(\nint StationAfstand1) public {if (StationAfstand1 > 35) { adviezen.push(\"StationAfstand1,null\"); } \nelse { adviezen.push(\"StationAfstand1,rood\"); } \n\n}\n}\r\n",
+  "sourcePath": "C:/TruffleBlockchain/Blockchain/contracts/SC1.sol",
+  "ast": {
+    "absolutePath": "/C/TruffleBlockchain/Blockchain/contracts/SC1.sol",
+    "exportedSymbols": {
+      "SC1": [
+        96
+      ]
+    },
+    "id": 97,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 58,
+        "literals": [
+          "experimental",
+          "ABIEncoderV2"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:33:1"
+      },
+      {
+        "id": 59,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "34:23:1"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 96,
+        "linearizedBaseContracts": [
+          96
+        ],
+        "name": "SC1",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 62,
+            "name": "adviezen",
+            "nodeType": "VariableDeclaration",
+            "scope": 96,
+            "src": "73:17:1",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_array$_t_string_storage_$dyn_storage",
+              "typeString": "string[]"
+            },
+            "typeName": {
+              "baseType": {
+                "id": 60,
+                "name": "string",
+                "nodeType": "ElementaryTypeName",
+                "src": "73:6:1",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                }
+              },
+              "id": 61,
+              "length": null,
+              "nodeType": "ArrayTypeName",
+              "src": "73:8:1",
+              "typeDescriptions": {
+                "typeIdentifier": "t_array$_t_string_storage_$dyn_storage_ptr",
+                "typeString": "string[]"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "body": {
+              "id": 70,
+              "nodeType": "Block",
+              "src": "156:24:1",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 68,
+                    "name": "adviezen",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 62,
+                    "src": "169:8:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_string_storage_$dyn_storage",
+                      "typeString": "string storage ref[] storage ref"
+                    }
+                  },
+                  "functionReturnParameters": 67,
+                  "id": 69,
+                  "nodeType": "Return",
+                  "src": "162:15:1"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 71,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "returnAdviezen",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 63,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "115:2:1"
+            },
+            "returnParameters": {
+              "id": 67,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 66,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 71,
+                  "src": "139:15:1",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_string_memory_$dyn_memory_ptr",
+                    "typeString": "string[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 64,
+                      "name": "string",
+                      "nodeType": "ElementaryTypeName",
+                      "src": "139:6:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_storage_ptr",
+                        "typeString": "string"
+                      }
+                    },
+                    "id": 65,
+                    "length": null,
+                    "nodeType": "ArrayTypeName",
+                    "src": "139:8:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_string_storage_$dyn_storage_ptr",
+                      "typeString": "string[]"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "138:17:1"
+            },
+            "scope": 96,
+            "src": "92:88:1",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 94,
+              "nodeType": "Block",
+              "src": "233:122:1",
+              "statements": [
+                {
+                  "condition": {
+                    "argumentTypes": null,
+                    "commonType": {
+                      "typeIdentifier": "t_int256",
+                      "typeString": "int256"
+                    },
+                    "id": 78,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftExpression": {
+                      "argumentTypes": null,
+                      "id": 76,
+                      "name": "StationAfstand1",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 73,
+                      "src": "238:15:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_int256",
+                        "typeString": "int256"
+                      }
+                    },
+                    "nodeType": "BinaryOperation",
+                    "operator": ">",
+                    "rightExpression": {
+                      "argumentTypes": null,
+                      "hexValue": "3335",
+                      "id": 77,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "number",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "256:2:1",
+                      "subdenomination": null,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_rational_35_by_1",
+                        "typeString": "int_const 35"
+                      },
+                      "value": "35"
+                    },
+                    "src": "238:20:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "falseBody": {
+                    "id": 92,
+                    "nodeType": "Block",
+                    "src": "309:42:1",
+                    "statements": [
+                      {
+                        "expression": {
+                          "argumentTypes": null,
+                          "arguments": [
+                            {
+                              "argumentTypes": null,
+                              "hexValue": "53746174696f6e41667374616e64312c726f6f64",
+                              "id": 89,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "kind": "string",
+                              "lValueRequested": false,
+                              "nodeType": "Literal",
+                              "src": "325:22:1",
+                              "subdenomination": null,
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_stringliteral_10dd246cd412916b8d5fa8468c8549a868a2e3ca9970cce9963c718f73ec57ff",
+                                "typeString": "literal_string \"StationAfstand1,rood\""
+                              },
+                              "value": "StationAfstand1,rood"
+                            }
+                          ],
+                          "expression": {
+                            "argumentTypes": [
+                              {
+                                "typeIdentifier": "t_stringliteral_10dd246cd412916b8d5fa8468c8549a868a2e3ca9970cce9963c718f73ec57ff",
+                                "typeString": "literal_string \"StationAfstand1,rood\""
+                              }
+                            ],
+                            "expression": {
+                              "argumentTypes": null,
+                              "id": 86,
+                              "name": "adviezen",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 62,
+                              "src": "311:8:1",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_array$_t_string_storage_$dyn_storage",
+                                "typeString": "string storage ref[] storage ref"
+                              }
+                            },
+                            "id": 88,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": false,
+                            "lValueRequested": false,
+                            "memberName": "push",
+                            "nodeType": "MemberAccess",
+                            "referencedDeclaration": null,
+                            "src": "311:13:1",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_function_arraypush_nonpayable$_t_string_storage_$returns$_t_uint256_$",
+                              "typeString": "function (string storage ref) returns (uint256)"
+                            }
+                          },
+                          "id": 90,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "kind": "functionCall",
+                          "lValueRequested": false,
+                          "names": [],
+                          "nodeType": "FunctionCall",
+                          "src": "311:37:1",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        "id": 91,
+                        "nodeType": "ExpressionStatement",
+                        "src": "311:37:1"
+                      }
+                    ]
+                  },
+                  "id": 93,
+                  "nodeType": "IfStatement",
+                  "src": "234:117:1",
+                  "trueBody": {
+                    "id": 85,
+                    "nodeType": "Block",
+                    "src": "260:42:1",
+                    "statements": [
+                      {
+                        "expression": {
+                          "argumentTypes": null,
+                          "arguments": [
+                            {
+                              "argumentTypes": null,
+                              "hexValue": "53746174696f6e41667374616e64312c6e756c6c",
+                              "id": 82,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "kind": "string",
+                              "lValueRequested": false,
+                              "nodeType": "Literal",
+                              "src": "276:22:1",
+                              "subdenomination": null,
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_stringliteral_5582fd2b8ee9c37789f6da9533f84d45664270169bb901c3f7541ec9ce30be80",
+                                "typeString": "literal_string \"StationAfstand1,null\""
+                              },
+                              "value": "StationAfstand1,null"
+                            }
+                          ],
+                          "expression": {
+                            "argumentTypes": [
+                              {
+                                "typeIdentifier": "t_stringliteral_5582fd2b8ee9c37789f6da9533f84d45664270169bb901c3f7541ec9ce30be80",
+                                "typeString": "literal_string \"StationAfstand1,null\""
+                              }
+                            ],
+                            "expression": {
+                              "argumentTypes": null,
+                              "id": 79,
+                              "name": "adviezen",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 62,
+                              "src": "262:8:1",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_array$_t_string_storage_$dyn_storage",
+                                "typeString": "string storage ref[] storage ref"
+                              }
+                            },
+                            "id": 81,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": false,
+                            "lValueRequested": false,
+                            "memberName": "push",
+                            "nodeType": "MemberAccess",
+                            "referencedDeclaration": null,
+                            "src": "262:13:1",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_function_arraypush_nonpayable$_t_string_storage_$returns$_t_uint256_$",
+                              "typeString": "function (string storage ref) returns (uint256)"
+                            }
+                          },
+                          "id": 83,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "kind": "functionCall",
+                          "lValueRequested": false,
+                          "names": [],
+                          "nodeType": "FunctionCall",
+                          "src": "262:37:1",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        "id": 84,
+                        "nodeType": "ExpressionStatement",
+                        "src": "262:37:1"
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 95,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "checkContract",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 74,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 73,
+                  "name": "StationAfstand1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 95,
+                  "src": "205:19:1",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_int256",
+                    "typeString": "int256"
+                  },
+                  "typeName": {
+                    "id": 72,
+                    "name": "int",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "205:3:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_int256",
+                      "typeString": "int256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "203:22:1"
+            },
+            "returnParameters": {
+              "id": 75,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "233:0:1"
+            },
+            "scope": 96,
+            "src": "181:174:1",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 97,
+        "src": "59:298:1"
+      }
+    ],
+    "src": "0:359:1"
+  },
+  "legacyAST": {
+    "absolutePath": "/C/TruffleBlockchain/Blockchain/contracts/SC1.sol",
+    "exportedSymbols": {
+      "SC1": [
+        96
+      ]
+    },
+    "id": 97,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 58,
+        "literals": [
+          "experimental",
+          "ABIEncoderV2"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:33:1"
+      },
+      {
+        "id": 59,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "34:23:1"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 96,
+        "linearizedBaseContracts": [
+          96
+        ],
+        "name": "SC1",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 62,
+            "name": "adviezen",
+            "nodeType": "VariableDeclaration",
+            "scope": 96,
+            "src": "73:17:1",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_array$_t_string_storage_$dyn_storage",
+              "typeString": "string[]"
+            },
+            "typeName": {
+              "baseType": {
+                "id": 60,
+                "name": "string",
+                "nodeType": "ElementaryTypeName",
+                "src": "73:6:1",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                }
+              },
+              "id": 61,
+              "length": null,
+              "nodeType": "ArrayTypeName",
+              "src": "73:8:1",
+              "typeDescriptions": {
+                "typeIdentifier": "t_array$_t_string_storage_$dyn_storage_ptr",
+                "typeString": "string[]"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "body": {
+              "id": 70,
+              "nodeType": "Block",
+              "src": "156:24:1",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 68,
+                    "name": "adviezen",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 62,
+                    "src": "169:8:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_string_storage_$dyn_storage",
+                      "typeString": "string storage ref[] storage ref"
+                    }
+                  },
+                  "functionReturnParameters": 67,
+                  "id": 69,
+                  "nodeType": "Return",
+                  "src": "162:15:1"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 71,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "returnAdviezen",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 63,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "115:2:1"
+            },
+            "returnParameters": {
+              "id": 67,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 66,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 71,
+                  "src": "139:15:1",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_string_memory_$dyn_memory_ptr",
+                    "typeString": "string[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 64,
+                      "name": "string",
+                      "nodeType": "ElementaryTypeName",
+                      "src": "139:6:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_storage_ptr",
+                        "typeString": "string"
+                      }
+                    },
+                    "id": 65,
+                    "length": null,
+                    "nodeType": "ArrayTypeName",
+                    "src": "139:8:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_string_storage_$dyn_storage_ptr",
+                      "typeString": "string[]"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "138:17:1"
+            },
+            "scope": 96,
+            "src": "92:88:1",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 94,
+              "nodeType": "Block",
+              "src": "233:122:1",
+              "statements": [
+                {
+                  "condition": {
+                    "argumentTypes": null,
+                    "commonType": {
+                      "typeIdentifier": "t_int256",
+                      "typeString": "int256"
+                    },
+                    "id": 78,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftExpression": {
+                      "argumentTypes": null,
+                      "id": 76,
+                      "name": "StationAfstand1",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 73,
+                      "src": "238:15:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_int256",
+                        "typeString": "int256"
+                      }
+                    },
+                    "nodeType": "BinaryOperation",
+                    "operator": ">",
+                    "rightExpression": {
+                      "argumentTypes": null,
+                      "hexValue": "3335",
+                      "id": 77,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "number",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "256:2:1",
+                      "subdenomination": null,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_rational_35_by_1",
+                        "typeString": "int_const 35"
+                      },
+                      "value": "35"
+                    },
+                    "src": "238:20:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "falseBody": {
+                    "id": 92,
+                    "nodeType": "Block",
+                    "src": "309:42:1",
+                    "statements": [
+                      {
+                        "expression": {
+                          "argumentTypes": null,
+                          "arguments": [
+                            {
+                              "argumentTypes": null,
+                              "hexValue": "53746174696f6e41667374616e64312c726f6f64",
+                              "id": 89,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "kind": "string",
+                              "lValueRequested": false,
+                              "nodeType": "Literal",
+                              "src": "325:22:1",
+                              "subdenomination": null,
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_stringliteral_10dd246cd412916b8d5fa8468c8549a868a2e3ca9970cce9963c718f73ec57ff",
+                                "typeString": "literal_string \"StationAfstand1,rood\""
+                              },
+                              "value": "StationAfstand1,rood"
+                            }
+                          ],
+                          "expression": {
+                            "argumentTypes": [
+                              {
+                                "typeIdentifier": "t_stringliteral_10dd246cd412916b8d5fa8468c8549a868a2e3ca9970cce9963c718f73ec57ff",
+                                "typeString": "literal_string \"StationAfstand1,rood\""
+                              }
+                            ],
+                            "expression": {
+                              "argumentTypes": null,
+                              "id": 86,
+                              "name": "adviezen",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 62,
+                              "src": "311:8:1",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_array$_t_string_storage_$dyn_storage",
+                                "typeString": "string storage ref[] storage ref"
+                              }
+                            },
+                            "id": 88,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": false,
+                            "lValueRequested": false,
+                            "memberName": "push",
+                            "nodeType": "MemberAccess",
+                            "referencedDeclaration": null,
+                            "src": "311:13:1",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_function_arraypush_nonpayable$_t_string_storage_$returns$_t_uint256_$",
+                              "typeString": "function (string storage ref) returns (uint256)"
+                            }
+                          },
+                          "id": 90,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "kind": "functionCall",
+                          "lValueRequested": false,
+                          "names": [],
+                          "nodeType": "FunctionCall",
+                          "src": "311:37:1",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        "id": 91,
+                        "nodeType": "ExpressionStatement",
+                        "src": "311:37:1"
+                      }
+                    ]
+                  },
+                  "id": 93,
+                  "nodeType": "IfStatement",
+                  "src": "234:117:1",
+                  "trueBody": {
+                    "id": 85,
+                    "nodeType": "Block",
+                    "src": "260:42:1",
+                    "statements": [
+                      {
+                        "expression": {
+                          "argumentTypes": null,
+                          "arguments": [
+                            {
+                              "argumentTypes": null,
+                              "hexValue": "53746174696f6e41667374616e64312c6e756c6c",
+                              "id": 82,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "kind": "string",
+                              "lValueRequested": false,
+                              "nodeType": "Literal",
+                              "src": "276:22:1",
+                              "subdenomination": null,
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_stringliteral_5582fd2b8ee9c37789f6da9533f84d45664270169bb901c3f7541ec9ce30be80",
+                                "typeString": "literal_string \"StationAfstand1,null\""
+                              },
+                              "value": "StationAfstand1,null"
+                            }
+                          ],
+                          "expression": {
+                            "argumentTypes": [
+                              {
+                                "typeIdentifier": "t_stringliteral_5582fd2b8ee9c37789f6da9533f84d45664270169bb901c3f7541ec9ce30be80",
+                                "typeString": "literal_string \"StationAfstand1,null\""
+                              }
+                            ],
+                            "expression": {
+                              "argumentTypes": null,
+                              "id": 79,
+                              "name": "adviezen",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 62,
+                              "src": "262:8:1",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_array$_t_string_storage_$dyn_storage",
+                                "typeString": "string storage ref[] storage ref"
+                              }
+                            },
+                            "id": 81,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": false,
+                            "lValueRequested": false,
+                            "memberName": "push",
+                            "nodeType": "MemberAccess",
+                            "referencedDeclaration": null,
+                            "src": "262:13:1",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_function_arraypush_nonpayable$_t_string_storage_$returns$_t_uint256_$",
+                              "typeString": "function (string storage ref) returns (uint256)"
+                            }
+                          },
+                          "id": 83,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "kind": "functionCall",
+                          "lValueRequested": false,
+                          "names": [],
+                          "nodeType": "FunctionCall",
+                          "src": "262:37:1",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        "id": 84,
+                        "nodeType": "ExpressionStatement",
+                        "src": "262:37:1"
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 95,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "checkContract",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 74,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 73,
+                  "name": "StationAfstand1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 95,
+                  "src": "205:19:1",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_int256",
+                    "typeString": "int256"
+                  },
+                  "typeName": {
+                    "id": 72,
+                    "name": "int",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "205:3:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_int256",
+                      "typeString": "int256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "203:22:1"
+            },
+            "returnParameters": {
+              "id": 75,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "233:0:1"
+            },
+            "scope": 96,
+            "src": "181:174:1",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 97,
+        "src": "59:298:1"
+      }
+    ],
+    "src": "0:359:1"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.0+commit.1d4f565a.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.0.9",
+  "updatedAt": "2019-06-03T11:10:30.374Z",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}

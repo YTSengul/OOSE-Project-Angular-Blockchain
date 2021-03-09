@@ -1,0 +1,42 @@
+.page-content {
+    display: flex;
+    flex-direction: column;
+    background-color: #e6e6e6;
+    height: 100vh;
+}
+
+.smartcontract-box {
+    margin: 10px 0;
+    text-align: center;
+}
+
+.smartcontracts {
+    margin-top: 50px;
+}
+
+.smartcontract {
+    background-color: white;
+    border: 1px solid black;
+    height: 150px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.item-right {
+    margin-left: auto;
+}
+
+.page-item {
+    margin-top: 25px;
+    align-self: center;
+}
+
+.btn-contract-aanmaken {
+    background-color: #FFFFFF;
+    border: solid;
+}
+
+.btn-contract-aanmaken:hover {
+    background-color: #3FB945;
+}
